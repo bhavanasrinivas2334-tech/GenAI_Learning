@@ -1,0 +1,27 @@
+#pip, virtual environment, .env filr
+#pip: pip installs Packages. Package manager
+
+#virtual environment": A 'venv' is a directory that contains
+#1. A copy of the python compiler
+#2. Its own 'pip'
+#3. Its own site-packages directory. Default target location
+#where python installs third party libraries
+#4. Activation scripts that modify PATH
+
+python --version #Windows
+python --version #mac
+
+python -m venv .venv #win
+python3 -m venv .venv #mac
+
+#Activate
+.venv\Scripts\activate.bat #win
+source .venv/bin/activate #mac
+
+#deactivate
+deactivate
+
+#pip installation (install dependencies/libraries)
+pip install package_name #syntax
+
+pip  install python-dotenv
